@@ -1,0 +1,251 @@
+@import url("glob_nav_footer.css");
+
+/* Top section title */
+ .main-wrapper {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 100%;
+}
+ #title-part {
+ 	background-color: #cc201f;
+ 	padding: 20px 20px 49px 20px;
+ 	margin: 0 -32px;
+ 	box-sizing: inherit;
+ }
+
+ #title-part h3 {
+ 	font-size: 2.5em;
+    font-weight: 300;
+    color: #fff;
+    letter-spacing: -.005em;
+    line-height: 1.2;
+    padding-left: 1em;
+ }
+
+  .sec-nav ul  {
+      overflow-x: auto;
+      width: 100%;
+      white-space: nowrap;
+ }
+
+ .sec-nav ul li .active {
+ 	border-bottom: 5px solid #fff;
+    font-weight: 500;
+ }
+
+ .sec-nav ul li {
+ 	display: inline-block;
+ 	float: none;
+ }
+
+ .sec-nav ul li a {
+ 	display: block;
+ 	padding: 2em 0 0 2em;
+ 	color: #fff;
+ 	font-size: 14px;
+ 	font-weight: 400;
+ 	text-decoration: none;
+ }
+
+ .subs-button {
+    background-color: #cc201f;
+    padding: 17px 25px 0 17px;
+    position: absolute;
+    right: 0
+ }
+ 
+ .bt-subsc {
+     float: right;
+     color: #fff;
+
+ }
+ #link-subsc {
+ 	text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 500;
+ }
+
+ /*Top big image */
+
+ .top-img {
+ 	box-sizing: content-box;
+  /*  margin: 0 -32px;*/
+
+ }
+
+ .top-img::after {
+ 	clear: both;
+    content: "";
+    display: table;
+ }
+
+ .big-img {
+ 	height: 60em;
+ }
+
+ .big-img img {
+ 	background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    margin-right: 10px;
+
+ }
+
+ .text-box {
+    background-color: #fff;
+    left: 2em;
+    margin-left: 0;
+    padding: 2em 3em 5em 2em;
+    position: absolute;
+    top: 28em;
+    width: 30em;
+}
+.text-box .header {
+    font-size: 30px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 1.3;
+}
+
+.text-box #title {
+	color: #9e9e9e;
+}
+.text-box h3 {
+	padding: 5px 0 8px;
+}
+.text-box a {
+	text-decoration: none;
+}
+.text-box h5{
+    font-size: 1.234em;
+    padding-top: 6em;
+    line-height: 1.6;
+    color: #cc201f;
+}
+
+/*List of images and articles*/
+  .content-big {
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 32px;
+    padding-top: 5px;
+    margin-bottom: 3em;
+ }
+.content-big::after {
+    clear: both;
+    content: "";
+    display: table;
+}    
+
+
+.image-cards {
+    background: #eee;
+}
+
+.item-cards {
+  height: auto;
+  max-height: 540px;
+  float: left;
+  overflow: hidden;
+  display: block;
+  width: 30%;
+  margin-right: 2.5%;
+  background: white;
+  margin-bottom: 3em;
+
+}
+
+.img-small {
+	 width: 380px;
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.sm-img-desc #head {
+     font-size: 14px;
+     color: #3f51b5;
+     padding-top:15px;
+     padding-bottom: 5px;
+     text-align: center;
+     font-style: italic;
+     text-transform: uppercase;
+}
+
+.sm-img-desc h3 {
+	font-size: 18px;
+    padding-bottom: 5px;
+    padding-left: 1.8em;
+}
+
+.sm-img-desc .below-text {
+     padding-top:15px;
+     padding-bottom: 5px;
+     padding-left: 5px;
+      color: #9e9e9e;
+}
+
+     /* Two images with one with desc*/
+.two-img-side {
+      width: 100%;
+      height: 500px;
+}
+
+.two-img-side::after {
+    clear: both;
+    content: "";
+    display: table;
+}  
+.left-img-desc {
+    float: left;
+    width: 50%;
+    height: auto;
+}  
+.right-img-big {
+   float: right;
+   width: 50%;
+   height: auto;
+}
+.img-small {
+   width:100%;
+   height: 300px;
+   margin-left: 5px;
+}
+#img-desc {
+   width:100%;
+   height: 200px;
+   margin-left: 5px;
+   background-color: white;
+}
+#img-desc #head {
+     padding-top:15px;
+     padding-bottom: 5px;
+     padding-left: 40px;
+      color: #9e9e9e;
+}
+#img-desc h3 {
+   padding-left: 38px;
+}
+#img-desc #readmore {
+    padding-top: 4em;
+}
+#img-desc .below-text {
+    font-size: 1.234em;
+    padding-left: 40px;
+    line-height: 1.6;
+    color: #cc201f;
+}
+.img-big {
+  width: 100%;
+   margin-left: 5px;
+   height: 500px;
+}
+
+
