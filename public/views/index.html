@@ -12,15 +12,16 @@
    <link rel="stylesheet" type="text/css" media="all" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
  	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <!--  javascript controller -->
-   <script src="../controllers/main.js"></script>
+   <script src="../js/main.js"></script>
     <!-- google fonts -->
-  
-   <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet"> 
+
     <!-- css style -->
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
    
 </head>
 <body>
+
 	<nav class="navbar navbar-default" data-offset-top="197">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -79,16 +80,18 @@
     
       <div id="searchbar" class="clearfix">
          <form id="searchform">
-             <button type="submit" id="searchsubmit" class="fa fa-search fa-4x"></button>
-            <input type="search" name="s" id="s" placeholder="Search Think with Google..." autocomplete="off">
+             <button type="submit" id="searchsubmit" class="fa fa-search fa-3x"></button>
+            <input type="search" name="s" id="s" placeholder="Search Think with Google" autocomplete="off">
             
          </form>
       </div>
-		<div class="content-big">
+    <div class="main-wrapper">
+      <div class="container">
+		 <div class="content-big">
 		     <!-- Contains the top three images and boxes within them -->
 			<section class="three-items">
 				<article class="rex box1"> <!-- Contains the big image --> 
-					<a href="#"><img src="../pic/landscape.png" class="image1 grow-img" height="400px">
+					<a href="#"><img src="../pic/lighthouse.jpg" class="image1 grow-img">
 		            </a>
 		            <div class="text-box">
 			            <h2 class="header">The Extra Mile: 4 Resolutions for Marketers From the Top YouTube Ads in 2016</h2>
@@ -242,12 +245,38 @@
 		    	</ul>
 		    </div> <!-- end display the image in the left side and their columns -->
 
-		    <div class="right-side-col side-links container"> <!-- Contains the columns in the right side -->
+		    <div class="right-side-col side-links"> <!-- Contains the columns in the right side -->
 		    	<div class="right-first-row right-newsletters">
 		    		<div class="news-wrapper">
 		    			<h4 class="headers-right-col"><a href="">Get Our Newsletter</a></h4>
 		    			<p class="sec-text">Put Google research and insight behind your thinking</p>
-		    			<a href=""><button class="button">Subscribe</button></a>
+		    			     <button class="button" data-toggle="modal" data-target="#myModal"  id="myBtn">Subscribe</button>
+		    			     <!-- Modal -->
+							  <div class="modal fade" id="myModal" role="dialog">
+							    <div class="modal-dialog">
+						      <!-- Modal content-->
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <h4>Data, insights, inspiration. Get the latest from Google sent to your inbox.</h4>
+						        </div>
+						        <div class="modal-body">
+						          <form role="form">
+						            <div class="form-group">
+						              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+						            </div>
+						            <div class="form-group">
+						              <input type="text" class="form-control" id="psw" placeholder="Enter Company">
+						            </div>
+						              <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+						          </form>
+						        </div>
+						        <div class="modal-footer">
+						          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+						        </div>
+						      </div>
+						      
+						    </div>
+						  </div> 
 		    		</div>
 		    		<div class="follow sec-text">
 		    			<span class="follow-text">Follow Think</span>
@@ -255,7 +284,7 @@
 		    				<li><a href=""><img src="../pic/googleicon.png" class="icons"></a></li>
 		    				<li><a href=""><img src="../pic/twittericon.png" class="icons"></a></li>
 		    				<li><a href=""><img src="../pic/linkedinicon.png" class="icons"></a></li>
-		    				<li><a href=""><img src="../pic/rssicon.png" class="icons"></li>
+		    				<li><a href=""><img src="../pic/rssicon.png" class="icons"></a></li>
 		    			</ul>
 		    		</div>
 		    	</div>
@@ -323,7 +352,7 @@
 	    		<div class="first-grid-footer"> 
 	    			<div class="newsletter"> <!-- contains the link and button in the top left -->
 	    				<h2 class="footer-header">Get Our Newsletter: Put Google research and insight behind your thinking</h2>
-	    				<a href=""><button class="button">Subscribe</button></a>
+	    				<button class="button" data-toggle="modal" data-target="#myModal"  id="myBtn">Subscribe</button>
 	    			</div>
 	    			<div class="contact-media"> <!-- Contains the links icons the top right footer -->
 	    				<nav class="footer-nav">
@@ -365,7 +394,8 @@
 	    		</div>
 	    	</section>
 	    </footer>
-   
+     </div>  <!-- End container -->
+  </div> <!--  main wrapper -->
  	
 </body>
 </html>

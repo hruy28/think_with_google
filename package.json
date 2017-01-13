@@ -1,0 +1,23 @@
+{
+  "name": "thinkwithgoogle",
+  "version": "1.0.0",
+  "description": "Making a copy of the UI of thinkwithgoogle.com",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hruy28/think_with_google.git"
+  },
+  "author": "Hruy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hruy28/think_with_google/issues"
+  },
+  "homepage": "https://github.com/hruy28/think_with_google#readme",
+  "dependencies": {
+    "connect": "^3.5.0",
+    "express": "^4.14.0"
+  }
+}

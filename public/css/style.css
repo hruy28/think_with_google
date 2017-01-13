@@ -1,8 +1,13 @@
 @import url("glob_nav_footer.css");
 
 /*This contains the top three images with their contents*/
+ .main-wrapper {
+    background-color: #eee;
+    margin: 0 auto;
+    width: 100%;
+}
 .content-big {
-	margin: 0 -32px;
+	margin: 0 -15px;
 	box-sizing: inherit;
 }
 .three-items {
@@ -44,11 +49,11 @@
     height: 103%;
 }
 .text-box {
-    bottom: 30em;
+    bottom: 3em;
     left: 5em;
     min-height: 28em;
     padding: 1.5em 2em 2.25em;
-    position: relative;
+    position: absolute;
     width: 25em;
     background-color: #E53935;
     display: block;
@@ -99,9 +104,8 @@
 .text-box-two, .text-box-three {
     height: 104px;
     min-height: 6em;
-    position: static;
-    position: relative;
-    bottom: 9.5em;
+    position: absolute;
+    bottom: 0.01em;
 } 
 .text-box-two {
    background-color: #1B5E20; 
@@ -209,22 +213,26 @@
 }
 
      /*Right side column*/
-/*First grid*/ 
+.side-links .right-newsletters:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0;
+}
 .right-side-col {
-	float: left;
+    float: left;
     display: block;
     width: 31.76157%;
     box-sizing: border-box;
 }
 .right-side-col:last-child {
-	margin-right: 0;
+    margin-right: 0;
 }
+.side-links .right-newsletters {
+    background-color: #f5f5f5;
+    padding: 12%;
+}
+/*First grid*/ 
 .side-links {
 	box-sizing: border-box;
     margin-top: 2.188em;  
-}
-.side-links .right-first-row:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
 }
 .headers-right-col a {
   color: black;
@@ -248,9 +256,6 @@
 }
 
 /*Second grid*/
-.right-second-row:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
-}
 .creative-part a {
 	float: left;
     line-height: 1.5em;
@@ -279,9 +284,6 @@ svg:not(:root) {
 }
 
 /*Third grid*/
-.right-third-row:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
-}
 .right-third-row .sc-item {
 	overflow: hidden;
 }
@@ -316,9 +318,6 @@ svg:not(:root) {
 }
 
 /*Fourth grid*/
-.right-fourth-row:not(:last-child) {
-    border-bottom: 1px solid #e0e0e0;
-}
 .right-fourth-row .item a {
 	display: inline-block;
     margin-bottom: .75em;
@@ -357,6 +356,9 @@ svg:not(:root) {
     .three-items {
     height: 50em;
     }
+    .text-box {
+
+    }
     .box2, .box3 {
         width: 50%;
     }
@@ -369,40 +371,36 @@ svg:not(:root) {
    }
    
     /* right-side-section*/
+    .right-newsletters {
+        padding: 2em;
+    }
     .right-side-col:last-child {
         margin-right: -50px;
     }
-   .side-links .right-first-row,
-   .side-links .right-second-row {
-        padding: 6%;
-        width: 100%;
-   }
-   .news-wrapper,
-   #getInspired {
+
+   .news-wrapper, .follow, #getInspired, .youtube  {
        width: 50%;
-       float: none;
+       float: left;
    }
-    .follow,
-    .youtube {
-        float: right;
-        width: 50%;
-    }
-    .follow {
-        margin-top: -20px;
-    }
-    .youtube {
-        margin-top: -135px;
-    }
+   .news-wrapper, #getInspired {
+      margin-top: -70px;
+   }
+   .news-wrapper .button {
+      margin-top: 0;
+   }
+   .follow {
+      margin-top: 30px;
+   }
+   .youtube {
+        margin-top: -50px;
+   }
+   
+  
     .sc-item .image {
         float: left;
         display: block;
         margin-right: 7.42297%;
         width: 46.28851%;
-        padding-bottom: calc(56.25% / 2.16);
-    }
-    .right-third-row {
-            padding-top: 50px;
-            padding-bottom: 50px;
     }
     .right-third-row #editor-pick {
         padding-bottom: 20px;
@@ -458,17 +456,16 @@ svg:not(:root) {
     .content-big {
         margin: 0 -16px;
     }
-    .three-items .box-1 {
-        height: 45em;
+   .box1 {
+        height: 25em;
     }
     .text-box {
         min-height: 0;
         width: 25em;
         height: 13em;
-        padding: 1em;
         margin: 0;
         left: 1em;
-        bottom: 15em;
+        bottom: 1em;
     }
     .text-box .header {
         font-size: 18px;
@@ -481,11 +478,24 @@ svg:not(:root) {
     }
     .box2, .box3 {
         width: 100%;
-
+        float: none;
+        height: auto;
+    }
+    .top-right-first-image,
+    .top-right-second-image {
+        width: 50%;
+        height: 100%;
     }
    .text-box-two,
    .text-box-three {
-        width: auto;
+        width: 50%;
+        height: 100%;
+        margin-left: 13.3em;
+        min-height: 6em;
+   }
+   #inside-second-pic, #link1 a, #inside-third-pic, #link2 a {
+        padding-top: 0;
+        padding-left: 0.8em;
    }
 
    /* Image-list-desc*/
@@ -497,12 +507,24 @@ svg:not(:root) {
    }
 
    /* News-letter*/
-   .follow {
-     margin-top: -180px
+    .right-newsletters {
+        margin: 0;
+    }
+ .news-wrapper, .follow, #getInspired, .youtube  {
+       width: 100%;
+       float: left;
    }
-
+   .news-wrapper, #getInspired {
+      margin-top: 0;
+   }
+   .news-wrapper .button {
+      margin-top: 0;
+   }
+   .follow {
+      margin-top: 0;
+   }
    .youtube {
-        margin-top: -210px;
+        margin-top: 0;
    }
 
    /* Footer */

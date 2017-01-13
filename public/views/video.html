@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Videos | Think with Google</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" media="all" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <!--  javascript controller -->
+   <script src="../js/main.js"></script>
+    <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Roboto|Montserrat" rel="stylesheet">  
+    <!-- css style -->
+  <link rel="stylesheet" type="text/css" href="../css/video.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" data-offset-top="197">
+        <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+             <a class="navbar-brand" href="index.html"><p>think with</p> <img src="../pic/Google_logo2.png" class="icons icon-header"></a>
+          </div>
+          <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                      
+                         <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">United States <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                            <li><a href="#">The Netherlands</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="#">Germany</a></li>
+                             <li role="separator" class="divider"></li>
+                            <li><a href="#">France</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Great Britain</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Eritrea</a></li>
+                         </ul>
+                          </li>
+                      </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="micromoments.html">Micro-Moments</a></li>
+                      <li><a href="consumer_trend.html">Consumer Trends</a></li>
+                      <li><a href="#">Mobile</a></li>
+                      <li><a href="video.html">Video</a></li>
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">More Topics <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Advertising</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Consumer Goods</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Measurement</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Programmatic</a></li>
+                          <li role="separator" class="divider"></li>
+                          <li><a href="#">Retail</a></li>
+                        </ul>
+                      <li><a href="#">Tools</a></li>
+                      <li> <a href="#" id="searchtoggl"><i class="fa fa-search fa-lg"></i></a></li>
+                    </ul>   
+            </div>
+          </div> <!-- /.navbar-collapse -->
+        </div> <!-- /.Container-fluid -->
+      </nav>    
+      <div id="searchbar" class="clearfix">
+         <form id="searchform">
+             <button type="submit" id="searchsubmit" class="fa fa-search fa-3x"></button>
+            <input type="search" name="s" id="s" placeholder="Search Think with Google" autocomplete="off">
+            
+         </form>
+      </div>	
+
+   <div class="main-wrapper">
+      <div class="container">
+           <div id="title-wrapper">  
+              <div id="title-part">
+                <h3>Video</h3>
+                <nav class="sec-nav">
+                  <ul>
+                    <li class="active">
+                      <a href="video.html">Insights</a>
+                    </li>
+                    <li>
+                      <a href="#">Trending</a>
+                    </li>
+                    <li>
+                      <a href="#">Leaderboards</a>
+                    </li>
+                  </ul>
+                </nav>
+                <div class="subs-button">
+                  <a href="#" class="bt-subsc"><i class="fa fa-envelope-o" id="icon"></i><span id="link-subsc" data-toggle="modal" data-target="#myModal"  id="myBtn">Subscribe</span></a>
+                           <!-- Modal -->
+                        <div class="modal fade" id="myModal" role="dialog">
+                          <div class="modal-dialog">
+                          <!-- Modal content-->
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h4>Data, insights, inspiration. Get the latest from Google sent to your inbox.</h4>
+                            </div>
+                            <div class="modal-body">
+                              <form role="form">
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="psw" placeholder="Enter Company">
+                                </div>
+                                  <button type="submit" class="btn btn-success btn-block">Subscribe</button>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>  <!-- End Modal box-->
+                </div>
+              </div>   
+         </div>    <!-- End Top section title -->
+
+         <section>
+           <div class="top-img">
+              <div class="big-img">
+                  <img src="../pic/lighthouse.jpg">
+              </div>
+              <div class="text-box">
+                   <p id="title">Featured</p>
+                   <h3 class="header">The Extra Mile: 4 Resolutions for Marketers From the Top YouTube Ads in 2016</h3>
+                    <p>Google's "Year in Search" retrospective highlights the moments that defined 2016.</p>
+                    <a href=""><h5>Read More</h5></a>
+              </div>
+           </div>
+         </section>
+         
+         <section>
+           <div class="content-big">
+              <ul class="image-cards">
+                <li class="item-cards hvr-box-shadow-outset">
+                  <img src="../pic/trail.jpg" class="img-small">
+                  <div class="sm-img-desc">
+                    <p id="head">Research Study</p>
+                    <h3>Your guide to winning the shift in mobile</h3>
+                     <p class="below-text">Seven customers shows their journey through the world.</p>
+                   </div> 
+                </li>
+                <li class="item-cards hvr-box-shadow-outset">
+                  <img src="../pic/apple.jpg" class="img-small">
+                  <div class="sm-img-desc">
+                    <p id="head">Research Study</p>
+                    <h3>Your guide to winning the shift in mobile</h3>
+                     <p class="below-text">Seven customers shows their journey through the world.</p>
+                   </div> 
+                </li>
+                <li class="item-cards hvr-box-shadow-outset">
+                  <img src="../pic/trail.jpg" class="img-small">
+                  <div class="sm-img-desc">
+                    <p id="head">Research Study</p>
+                    <h3>Your guide to winning the shift in mobile</h3>
+                     <p class="below-text">Seven customers shows their journey through the world.</p>
+                   </div> 
+                </li>
+
+              </ul>
+            </div>
+          </section>   <!--  End content big -->
+          <div class="two-img-side"> 
+            <div class="left-img-desc">
+              <div id="left-img-container">
+                <img src="../pic/balancing.jpg" class="img-small"> 
+              </div>
+              <div id="img-desc">
+                 <p id="head">Research Study</p>
+                  <h3>Your guide to winning the shift in mobile</h3>
+                  <p class="below-text" id="readmore">Read More</p> 
+                  <p class="below-text">See All Studies</p> 
+              </div> 
+            </div> 
+            <div class="right-img-big">
+                <img src="../pic/wind-farm.jpg" class="img-big">
+                 <div class="text-box">
+                   <p id="title">Featured</p>
+                   <h3 class="header">The Extra Mile: 4 Resolutions for Marketers From the Top YouTube Ads in 2016</h3>
+                    <p>Google's "Year in Search" retrospective highlights the moments that defined 2016.</p>
+                    <a href=""><h5>Read More</h5></a>
+                 </div> 
+            </div>
+          </div>
+          <section id="newsletter">   <!-- Submit form -->
+              <div class="container subscribe">
+                <h3 id="newsletter-head">Get Our Newsletter: Put Google Research Behind Your Thinking</h3>
+                <form>
+                  <div>
+                    <input type="email" placeholder="Email Address">
+                  </div>
+                  <div>
+                    <input type="name" placeholder="Company"></input>
+                  </div>
+                  <p>Sign up to receive your selected communications from Google Inc. and its affiliates. Your information will be used in accordance with Google's privacy policy. You may opt out at any time. </p>
+                  <a href=""><button class="button">Subscribe</button></a>
+                </form> 
+              </div>
+              <div id="letter-icon">
+                <a href=""><img src="../pic/letter1.png" class="icons"></a>
+              </div>
+          </section>   <!-- End submit form -->
+      
+       <footer class="main-footer"> <!-- Footer begins here -->
+        <section class="first-part-footer">
+          <div class="first-grid-footer"> 
+            <div class="newsletter"> <!-- contains the link and button in the top left -->
+              <h2 class="footer-header">Get Our Newsletter: Put Google research and insight behind your thinking</h2>
+              <button class="button" data-toggle="modal" data-target="#myModal"  id="myBtn">Subscribe</button>
+            </div>
+            <div class="contact-media"> <!-- Contains the links icons the top right footer -->
+              <nav class="footer-nav">
+                <a href="" class="about-link-footer">About Think with Google</a>
+                <a href="" class="feedback-link-footer">Feedback</a>
+              </nav>
+              <div class="links-icon-footer">
+                <a href=""><img src="../pic/googleicon.png" class="icons icon-footer"></a>
+                <a href=""><img src="../pic/twittericon.png" class="icons icon-footer"></a>
+                <a href=""><img src="../pic/linkedinicon.png" class="icons icon-footer"></a>
+                <a href=""><img src="../pic/rssicon.png" class="icons icon-footer"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="second-part-footer">
+          <div class="sec-grid-footer"> 
+            <nav class="footer-botttm-links">  <!-- Contains the links in the bottom left footer -->
+              <a href=""><img src="../pic/Google_logo2.png" class="icons icon-footer"></a>
+              <a href="" class="bottom-footer-link">About Google</a>
+              <a href="" class="bottom-footer-link">Products</a>
+              <a href="" class="bottom-footer-link">Advertising</a>
+              <a href="" class="bottom-footer-link">Business</a>
+              <a href="" class="bottom-footer-link">Privacy&Terms</a>
+            </nav>
+            <div class="right-bottom-footer">  <!-- Contains the select option in the bottom right footer -->
+              <label class="language-label">Change language or region</label>
+              <div class="lang-select">
+                <select class="select-lang-reg">
+                  <option>English-United States</option>
+                  <option>Dutch-The Netherlands</option>
+                  <option>Deutsch-Germany</option>
+                  <option>French-France</option>
+                  <option>English-Great Britain</option>
+                  <option>Tigrigna-Eritrea</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </section>
+      </footer>
+    </div> <!-- End container  -->  
+  </div>   <!-- End Main Wrapper -->   
+</body>
+</html>
