@@ -24,11 +24,25 @@ $(document).ready(function(){
       e.preventDefault(); // stop form submission
     });
 
+    // Social icons on click
+    $('#share-but').click(function() {
+        $('#hidden-icons').toggle();
+    });
+   
+
     // Modal box
     $("#myBtn").click(function(){
          $("#myModal").modal();
     });
 
+    
+  //   $(window).scroll(function() {
+  //   if ($(document).scrollTop() > 50) {
+  //     $("#title-part").addClass("test");
+  //   } else {
+  //     $("#title-part").removeClass("test");
+  //   }
+  // });
 
 
 });
