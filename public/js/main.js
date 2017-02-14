@@ -36,13 +36,13 @@ $(document).ready(function(){
     });
 
     
-  //   $(window).scroll(function() {
-  //   if ($(document).scrollTop() > 50) {
-  //     $("#title-part").addClass("test");
-  //   } else {
-  //     $("#title-part").removeClass("test");
-  //   }
-  // });
+    $(window).scroll(function() {
+    if ($(document).scrollTop() > 200) {
+      $("#hidden-title").show();
+    }else {
+       $("#hidden-title").hide();
+    }
+  });
 
 
 });

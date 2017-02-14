@@ -17,7 +17,16 @@
   opacity: 1;
  	box-sizing: inherit;
  }
-
+ #hidden-title {
+   background-color: #000;
+   display: none;
+   margin: 0 -14px;
+   position: fixed;
+   top:0;
+   color: #fff;
+   width: 100%;
+   z-index: 1;
+ }
  #title-part h2 {
  	  font-size: 2.48832em;
     font-weight: 300;
